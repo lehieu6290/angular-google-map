@@ -1,0 +1,24 @@
+<label>Search</label>
+<input type="text" class="form-control" (keydown.enter)="$event.preventDefault()" placeholder="Search" autocorrect="off" autocapitalize="off" type="text" #search>
+
+
+<agm-map style="height: 300px; width: 500px;" [latitude]="latitude" [longitude]="longitude" [zoom]="zoom">
+    <agm-marker [latitude]="latitude" [longitude]="longitude" [markerDraggable]="true"></agm-marker>
+</agm-map>
+
+<div>
+    <label>Street</label>
+    <input type="text" #streetField autocomplete="off">
+    <br>
+    <label>City</label>
+    <input type="text" #cityField autocomplete="off">
+    <br>
+    <label>State</label>
+    <input type="text" #stateField autocomplete="off">
+    <br>
+    <label>Country</label>
+    <input type="text" #countryField autocomplete="off">
+    <br>
+    <label>Zip code</label>
+    <input type="text" #zipcodeField autocomplete="off">
+</div>
